@@ -2,11 +2,13 @@
 
 * `git init` 初始化仓库
 * `git add new.md` 文件添加到暂存区
-  `git check out new.md` 反向操作，从暂存区转移到工作区
+  `git check -- out new.md` 反向操作，从暂存区转移到工作区
+  `git restore new.md` 新版指令，同`git checkout` 
 * `git commit -m "create a new file"` 文件提交
 * `git reset --hard HEAD^` 回退到上一个版本
   `git reset --hard HEAD~100` 回退到前一百个版本
   `git reset --hard 1094a`  回退/前进到1094a开头的版本号
+  `git restore --staged` 新版指令，同`git reset HEAD` 
 * `git status` 查看状态
 * `git diff new.md` 查看工作区和暂存区的区别
   `git diff --cached new.md` 查看暂存区和仓库区别
