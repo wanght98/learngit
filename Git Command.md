@@ -25,7 +25,9 @@
   等同于以下操作
   `git branch dev` 创建dev分支
   `git checkout dev` 切换到dev分支
-* `git branch` 查看当前分支
+  `git switch -c dev` 新版指令，创建并切换到dev分支
+  `git switch dev` 新版指令，切换到dev分支
+* `git branch` 查看分支
 * `git branch -d dev` 删除dev分支
 * `git merge dev` 合并dev分支到当前分支
 
