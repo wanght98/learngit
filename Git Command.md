@@ -2,7 +2,7 @@
 
 * `git init` 初始化仓库
 * `git add new.md` 文件添加到暂存区
-  `git check -- out new.md` 反向操作，从暂存区转移到工作区
+  `git checkout -- new.md` 反向操作，从暂存区转移到工作区
   `git restore new.md` 新版指令，同`git checkout` 
 * `git commit -m "create a new file"` 文件提交
 * `git reset --hard HEAD^` 回退到上一个版本
