@@ -17,4 +17,8 @@
   `git log --pretty=online` 显示简洁
 * `git reflog` 记录使用过的git指令
 * `git rm new.md` 从版本库中删除文件
+* `git remote add origin ...` 本地库关联远程库
+* `git push -u origin master` 将本地库的内容push到远程库（第一次）
+  `git push origin master` 后期使用时可以用这个指令
+* `git clone ...` 将远程库克隆到本地
 
