@@ -21,4 +21,11 @@
 * `git push -u origin master` 将本地库的内容push到远程库（第一次）
   `git push origin master` 后期使用时可以用这个指令
 * `git clone ...` 将远程库克隆到本地
+* `git checkout -b dev` 创建dev分支并切换
+  等同于以下操作
+  `git branch dev` 创建dev分支
+  `git checkout dev` 切换到dev分支
+* `git branch` 查看当前分支
+* `git branch -d dev` 删除dev分支
+* `git merge dev` 合并dev分支到当前分支
 
