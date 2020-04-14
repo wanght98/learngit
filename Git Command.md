@@ -16,3 +16,5 @@
 * `git log` 显示提交日志
   `git log --pretty=online` 显示简洁
 * `git reflog` 记录使用过的git指令
+* `git rm new.md` 从版本库中删除文件
+
