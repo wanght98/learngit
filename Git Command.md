@@ -15,11 +15,13 @@
   `git diff HEAD new.md` 查看工作区和仓库的区别
 * `git log` 显示提交日志
   `git log --pretty=online` 显示简洁
+  `git log --graph` 可以看到分支合并图
 * `git reflog` 记录使用过的git指令
 * `git rm new.md` 从版本库中删除文件
 * `git remote add origin ...` 本地库关联远程库
 * `git push -u origin master` 将本地库的内容push到远程库（第一次）
   `git push origin master` 后期使用时可以用这个指令
+  `git push origin dev` 讲本地分支推到远程分支
 * `git clone ...` 将远程库克隆到本地
 * `git checkout -b dev` 创建dev分支并切换
   等同于以下操作
@@ -29,5 +31,13 @@
   `git switch dev` 新版指令，切换到dev分支
 * `git branch` 查看分支
 * `git branch -d dev` 删除dev分支
+  `git branch -D dev` 强行删除dev分支（如果想要删除没有合并过的分支）
 * `git merge dev` 合并dev分支到当前分支
+  `git merge --no--ff dev`禁用fast forward模式，在merge时生成新的commit,可以从log中看到分支信息即使分支后面被删除
+* 修复bug时，会创建新的bug分支，合并后删除
+* `git stash`保存工作现场，以后恢复
+  `git stash list`查看保存了哪些存储
+  `git stash pop` 恢复现场并删除stash内容
+  `git stash apply` 恢复现场但不删除stash内容 `git stash drop`删除stash内容
+* `git cherry-pick 34ec....`复制这个提交到当前的分支
 
